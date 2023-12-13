@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@800&display=swap');
+
+
+*:focus {
+  outline: #000 solid 1px;
+  filter: brightness(0.9);
+  color:#000;
+}
+body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            margin: 10px;
+            background-color: #f0f0f0;
+            
+        }
+        .gameContainer {
+          display: flex;
+          justify-content: center;
+            align-items: center;
+        }
+        .game {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            gap: 10px;
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            font-size: 50px;
+            font-weight: bold;
+            cursor: pointer;
+            border: 1px solid #00000066;
+            border-radius: 10px;
+            font-family: 'Cabin', sans-serif;
+            transition: background-color 0.3s;
+        }
+        .box:hover {
+            background-color: #e0e0e0;
+        }
+ 
+
+#setPlayerContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index:100;
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid #000;
+  padding: 15px;
+  position: absolute;
+  border-radius: 10px;
+  border: 1px solid #00000066;
+  transition: 0.3s;
+}
+#playerName1, #playerName2 {
+  padding: 5px;
+  font-size: 20px;
+  margin: 5px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #00000066;
+}
+#playerName1::placeholder, #playerName2::placeholder {
+  opacity: 0.25;
+}
+#setPlayerName {
+  font-family: 'cabin', Sans-Serif;
+  width: 98%;
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 10px;
+  height: 50px;
+  border: 1px solid #00000066;
+  margin-top: 5px;
+}
+#setPlayerName:hover {
+  filter: brightness(0.9);
+}
+#newGameBtn, #reloadPage {
+  width: 80%;
+  height: fit-content;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #00000066;
+  margin-top: 10px;
+}
+#newGameBtn:hover {
+  filter: brightness(0.9);
+}
+
+#comment {
+  opacity: 0.5;
+  padding-left: 5px;
+  font-size: 15px;
+  text-align: right;
+}
+
+.title {
+  padding-left: 1em;
+}
+
+
+
+.highScoreContainer {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 80%;
+  border: 1px #00000066 solid;
+  border-radius: 10px 10px 0 0;
+  height: 200px;
+  padding: 1em;
+  margin-top: 1em;
+}
+.highScoreX, .highScoreO {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  padding: 10px;
+  width: 80%;
+  height: 30px;
+  border: #00000066 solid;
+}
+.highScoreX {
+  border-radius: 10px 10px 0 0;
+  border-width: 1px 1px 0 1px;
+}
+.highScoreO {
+  border-radius:0 0 10px 10px;
+  margin-top: 50px;
+  border-width: 1px 1px 1px 1px;
+}
+
+
+#scoreNameX, #scoreNameO, #scoreX, #scoreO {
+  font-size: 20px;
+  font-family: 'Arial', Sans-Serif;
+}
+#scoreO, #scoreX {
+  position: absolute;
+  right: 0;
+  padding-right: 1em;
+}
+
+#reset {
+  position: absolute;
+  bottom: 1em;
+  right: 2em;
+  padding:5px;
+  border-radius: 10px;
+  border: 1px #00000066 solid;
+}

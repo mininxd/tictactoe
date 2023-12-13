@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script async src="./script.js"></script>
+    <script type="module" src="./moreScript.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Tic Tac Toe</title>
+</head>
+
+
+<body>
+ 
+    
+  <div style="display:block" id="setPlayerContainer">
+   <span id="comment">optional</span>
+   <h1>Set Player Name</h1>
+       <input placeholder="Player X" id="playerName1"> <br>
+       <input placeholder="Player O" id="playerName2"> <br>
+       <center>
+       <button id="setPlayerName">Play</button>
+       </center>
+  </div>
+ <br>
+<div id="content" style="display:none;">
+  <h1 class="title">Tic Tac Toe</h1>
+    <div class="gameContainer">
+    <div class="game"></div>
+    </div>
+ 
+ <center>
+ <button id="newGameBtn" onclick="newGame()">New</button><br>
+ <button id="reloadPage">Reload Page</button>
+ </center>
+
+<div class="highScoreContainer">
+<h2>High Score</h2>
+<div class="highScoreX">
+  <span id="scoreNameX">X</span> 
+  <span id="scoreX">0</span>
+</div>
+<div class="highScoreO">
+  <span id="scoreNameO">O</span> 
+  <span id="scoreO">0</span>
+</div>
+<button id="reset">Reset High Score</button>
+</div>
+   
+</div>
+</body>
+</html>
