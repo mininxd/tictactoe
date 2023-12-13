@@ -162,7 +162,7 @@ body {
 .socmedContainer {
   position:absolute;
   bottom: 0;
-  transform: translateY(80px);
+  transform: translateY(120px);
   margin-left: 1em;
   padding-bottom: 2em;
 }
