@@ -82,7 +82,7 @@ body {
 #setPlayerName:hover {
   filter: brightness(0.9);
 }
-#newGameBtn, #reloadPage {
+#newGameBtn, #reloadPage{
   width: 80%;
   height: fit-content;
   font-size: 20px;
@@ -156,4 +156,23 @@ body {
   padding:5px;
   border-radius: 10px;
   border: 1px #00000066 solid;
+}
+
+
+.socmedContainer {
+  position:absolute;
+  bottom: 0;
+  transform: translateY(70px);
+  margin-left: 1em;
+  padding-bottom: 1em;
+}
+.btn {
+  border: 1px solid #00000066;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+a, a:active, a:focus {
+  color:#000;
+  text-decoration: none;
 }
