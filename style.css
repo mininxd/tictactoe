@@ -114,7 +114,7 @@ body {
   transform: translatex(-50%);
   width: 80%;
   border: 1px #00000066 solid;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
   height: 200px;
   padding: 1em;
   margin-top: 1em;
