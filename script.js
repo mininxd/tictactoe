@@ -64,7 +64,7 @@
          if (gameOver) {
   if (player === 'X') {
    player = localStorage.getItem('ttcPlayer1');
-   alert(`Player ${player} wins!`);
+   alert(`${player} wins!`);
    
   var iX;
   iX = localStorage.getItem('scoreX');
@@ -76,7 +76,7 @@
   
    else if (player === 'O') {
    player = localStorage.getItem('ttcPlayer2');
-   alert(`Player ${player} wins!`);
+   alert(`${player} wins!`);
    
    var iO;
   iO = localStorage.getItem('scoreO');
